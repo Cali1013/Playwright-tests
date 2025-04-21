@@ -9,19 +9,33 @@ const { devices } = require('@playwright/test');
 // import path from 'path';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
 
+//Playwright cofig file
 const config = {
-  testDir: './Projects',
-  reporter : 'html',
-  testignore: ['e2e/chatgpttest2.spec.js'],
-  timeout: 40 *1000,
+  testDir: './Projects', //Test folder
+  testIgnore: ['e2e/chatgpttest2.spec.js'],
+  timeout: 40 *1000, //Global Timeout
   expect : {
     timeout: 5000
   },
-  
+  reporter: [['html', {outputFolder: 'playwright-report', open: 'on'}]],
+
   use: {
 
-    browsername : 'Chromium',
-    headless : true
-  }
+    headless : true,
+    trace: 'retain-on-failure',
+    screenshot: 'retain-on-failure',
+    video: 'retain-on-failure',
 
-}
+  },
+
+  projects:[
+    {
+      name: 'Chromium',
+      use: { browserName: 'chromium'},
+
+    },
+  ],
+
+};
+
+module.exports = config;
