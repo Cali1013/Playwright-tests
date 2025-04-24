@@ -1,29 +1,30 @@
-# Playwright-tests
-# 🎯 Playwright Tests
+# Playwright Tests – Personal Automation Practice
 
-A growing collection of UI automation tests written in Playwright (JavaScript).
+This repository contains a growing suite of end-to-end UI automation tests using [Microsoft Playwright](https://playwright.dev/). It's part of my hands-on learning path as I transition from manual QA leadership into technical test automation.
 
-## 🔍 Covered Scenarios
-- ✅ Login success and failure (Herokuapp)
-- 📄 Form submission flow (DemoQA - deprecated due to site flakiness)
-- 📦 End-to-end test structure setup
-- 🔧 Config tweaks, trace files, custom utility functions
+## What's Included
 
-## 🧠 Why I Built This
-I'm transitioning from manual QA to automation, and this repo is part of my journey to becoming a full-stack test engineer.  
-Everything here is hands-on—no copy-paste from tutorials, just real testing logic and lessons learned.
+- ✅ Login, failed login, and logout flows (Herokuapp)
+- ✅ Account verification and fund transfers (ParaBank)
+- In-progress: Bill payment and form validation workflows
 
-## 🛠️ Tools Used
-- Playwright
-- JavaScript
-- VS Code
-- GitHub
+## Tools Used
 
-## 🚀 What's next?
-- Add API test examples
-- Polish test folder structure
-- Build a mini framework
+- Playwright (JavaScript)
+- Visual Studio Code
+- GitHub for version control
+- Postman (for future API testing integration)
+- Node.js / NPM
 
----
+## Goals of This Repository
 
-> Built with curiosity. Practiced with purpose.
+- Build reliable test flows from scratch
+- Explore Playwright features like selectors, assertions, trace files
+- Learn GitHub flow with `develop` as my main working branch
+- Practice reusable test structure and improve technical confidence
+
+## Folder Structure
+
+## Author
+
+Culbert Oblepias – Quality Assurance Engineer | Actively building toward a Technical Test Lead role
